@@ -1,3 +1,5 @@
+// Shared TypeScript types and interfaces used across every scanner module
+
 export type NodeKind = 'source' | 'sink' | 'code_snippet';
 
 export type PiiType =

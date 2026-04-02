@@ -1,3 +1,5 @@
+// Unit tests for all shared utils: hash determinism, state round-trip, and safe file reading.
+
 import * as os from 'os';
 import * as path from 'path';
 import * as fs from 'fs';

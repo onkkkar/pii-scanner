@@ -1,3 +1,5 @@
+// Reads and writes scanner state (hashes, graph fragments, activity catalog) to disk between runs
+
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { dirname } from 'path';
 
