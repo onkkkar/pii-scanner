@@ -1,0 +1,102 @@
+{
+  "scanId": "scan-20260403-223744",
+  "repoVersion": "8c005743d2e603483264290f7de9fe263bd60b85",
+  "repoPath": "/Users/onkarpatel/dev/my/pii_scanner/sample-app",
+  "scannedAt": "2026-04-03T17:07:44.430Z",
+  "sensitiveDataTypes": [
+    "EMAIL",
+    "PHONE",
+    "NAME",
+    "ADDRESS",
+    "DOB",
+    "IP_ADDRESS"
+  ],
+  "traces": [
+    {
+      "sourceId": "source:RegisterForm",
+      "sinkId": "sink:app.log",
+      "path": [
+        "source:RegisterForm",
+        "fn:register",
+        "sink:app.log"
+      ],
+      "piiTypes": [
+        "EMAIL",
+        "PHONE",
+        "NAME",
+        "ADDRESS",
+        "DOB"
+      ]
+    },
+    {
+      "sourceId": "source:RegisterForm",
+      "sinkId": "sink:users",
+      "path": [
+        "source:RegisterForm",
+        "fn:register",
+        "sink:users"
+      ],
+      "piiTypes": [
+        "EMAIL",
+        "PHONE",
+        "NAME",
+        "ADDRESS",
+        "DOB",
+        "IP_ADDRESS"
+      ]
+    }
+  ],
+  "processingActivities": [
+    {
+      "canonicalId": "activity:logging",
+      "canonicalName": "logging",
+      "aliases": [
+        "Performs logging on user data"
+      ],
+      "evidence": [
+        "sink:app.log",
+        "fn:register"
+      ]
+    },
+    {
+      "canonicalId": "activity:validation",
+      "canonicalName": "validation",
+      "aliases": [
+        "Performs validation on user data"
+      ],
+      "evidence": [
+        "fn:register"
+      ]
+    },
+    {
+      "canonicalId": "activity:transformation",
+      "canonicalName": "transformation",
+      "aliases": [
+        "Performs transformation on user data"
+      ],
+      "evidence": [
+        "fn:register"
+      ]
+    },
+    {
+      "canonicalId": "activity:persistence",
+      "canonicalName": "persistence",
+      "aliases": [
+        "Performs persistence on user data"
+      ],
+      "evidence": [
+        "fn:register"
+      ]
+    },
+    {
+      "canonicalId": "activity:enrichment",
+      "canonicalName": "enrichment",
+      "aliases": [
+        "Performs enrichment on user data"
+      ],
+      "evidence": [
+        "source:RegisterForm"
+      ]
+    }
+  ]
+}
