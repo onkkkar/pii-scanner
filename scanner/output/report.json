@@ -1,8 +1,8 @@
 {
-  "scanId": "scan-20260403-223744",
-  "repoVersion": "8c005743d2e603483264290f7de9fe263bd60b85",
+  "scanId": "scan-20260404-132118",
+  "repoVersion": "1ff1997e0c122f942c11ae851ff9274c9994d8cc",
   "repoPath": "/Users/onkarpatel/dev/my/pii_scanner/sample-app",
-  "scannedAt": "2026-04-03T17:07:44.430Z",
+  "scannedAt": "2026-04-04T07:51:18.815Z",
   "sensitiveDataTypes": [
     "EMAIL",
     "PHONE",

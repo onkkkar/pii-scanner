@@ -1,0 +1,6 @@
+{
+  "backend/logger.js": "98dbbf9dba51f129614a0b10787edd83",
+  "backend/userModel.js": "d54a7850538453e42a19223b64536ddc",
+  "backend/userRoutes.js": "c0816fee39c65b5e3bade6f00c3a74e0",
+  "frontend/RegisterForm.jsx": "088d3fe9b7d5dcc67ecc005b053461ed"
+}

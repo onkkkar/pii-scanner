@@ -1,0 +1,48 @@
+{
+  "activity:logging": {
+    "canonicalName": "logging",
+    "aliases": [
+      "Performs logging on user data"
+    ],
+    "evidence": [
+      "sink:app.log",
+      "fn:register"
+    ]
+  },
+  "activity:validation": {
+    "canonicalName": "validation",
+    "aliases": [
+      "Performs validation on user data"
+    ],
+    "evidence": [
+      "fn:register"
+    ]
+  },
+  "activity:transformation": {
+    "canonicalName": "transformation",
+    "aliases": [
+      "Performs transformation on user data"
+    ],
+    "evidence": [
+      "fn:register"
+    ]
+  },
+  "activity:persistence": {
+    "canonicalName": "persistence",
+    "aliases": [
+      "Performs persistence on user data"
+    ],
+    "evidence": [
+      "fn:register"
+    ]
+  },
+  "activity:enrichment": {
+    "canonicalName": "enrichment",
+    "aliases": [
+      "Performs enrichment on user data"
+    ],
+    "evidence": [
+      "source:RegisterForm"
+    ]
+  }
+}
