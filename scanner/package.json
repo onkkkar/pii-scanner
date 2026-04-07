@@ -12,7 +12,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@types/node": "^25.5.0",
     "axios": "^1.14.0",
     "dotenv": "^17.3.1",
     "ts-node": "^10.9.2",
@@ -20,6 +19,7 @@
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
+    "@types/node": "^25.5.2",
     "jest": "^30.3.0",
     "ts-jest": "^29.4.6"
   }
